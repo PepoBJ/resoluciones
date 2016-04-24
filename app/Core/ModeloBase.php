@@ -1,4 +1,4 @@
-<?php namespace BJ\Core;
+<?php namespace App\Core;
 
     class ModeloBase extends EntidadBase
     {

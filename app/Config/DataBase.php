@@ -1,4 +1,4 @@
-<?php namespace BJ\Config;
+<?php namespace App\Config;
 
 	class DataBase
 	{
@@ -23,13 +23,13 @@
 		
 		/*		CONTRASEÑA BD 		*/
 		
-		public static $pass     = "";
+		public static $pass     = "genga1232";
 		
 		/*	**	*/
 		
 		/*		NOMBRE DE LA BD 		*/
 		
-		public static $database = "";
+		public static $database = "resolucion";
 		
 		/*	**	*/
 		

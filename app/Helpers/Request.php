@@ -1,4 +1,4 @@
-<?php namespace BJ\Helpers;
+<?php namespace App\Helpers;
 
 	class Request 
 	{

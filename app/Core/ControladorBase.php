@@ -1,6 +1,6 @@
-<?php namespace BJ\Core;
+<?php namespace App\Core;
 
-    use BJ\Config\VariablesGlobales;
+    use App\Config\VariablesGlobales;
  
 
     class ControladorBase

@@ -1,6 +1,6 @@
-<?php namespace BJ\Core;
+<?php namespace App\Core;
 
-    use BJ\Config\DataBase;
+    use App\Config\DataBase;
     use Mysqli;
 
     class Conectar

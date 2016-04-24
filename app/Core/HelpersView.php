@@ -1,6 +1,6 @@
-<?php namespace BJ\Core;
+<?php namespace App\Core;
 	
-	use BJ\Config\VariablesGlobales;
+	use App\Config\VariablesGlobales;
 
     class HelpersView
     {
@@ -12,7 +12,7 @@
             $controlador = $controlador == "" ? VariablesGlobales::$controlador_defecto : $controlador;
             $accion      = $accion == "" ?VariablesGlobales::$accion_defecto : $accion;
             
-            $urlString   = VariablesGlobales::$base_url . "/" . $controlador . "/" . $accion . "/" . $param;
+            $urlString   = VariablesGlobales::$base_url . $controlador . "/" . $accion . "/" . $param;
             return $urlString;
         }
         
@@ -21,9 +21,14 @@
             return VariablesGlobales::$base_url;
         }
 
+        public function responsive()
+        {
+            return '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">';
+        }
+
         /*	**	*/
 
-        /*        BJ FAVICON         */
+        /*        App FAVICON         */
         
         public function favicon()
         {
@@ -32,9 +37,9 @@
             $host_protocol = $protocol.$domainName;
 
             return '<link rel="shortcut icon" href="' . $host_protocol . 'favicon.ico" />
-            <link rel="icon" type="image/png" href="' . $host_protocol . 'img/logo.png" />
+            <link rel="icon" type="image/png" href="' . $host_protocol . 'img/favicon.png" />
             <link rel="shortcut icon" href="' . VariablesGlobales::$base_url . 'favicon.ico" />
-            <link rel="icon" type="image/png" href="' . VariablesGlobales::$base_url . 'img/logo.png" />';
+            <link rel="icon" type="image/png" href="' . VariablesGlobales::$base_url . 'img/favicon.png" />';
         }
         
         /*    **    */

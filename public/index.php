@@ -3,8 +3,8 @@
 	require '../vendor/autoload.php';
 
 
-	use BJ\Config\VariablesGlobales;
-	use BJ\Core\ControladorFrontal;
+	use App\Config\VariablesGlobales;
+	use App\Core\ControladorFrontal;
 
 	$con = new ControladorFrontal();
 	

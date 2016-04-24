@@ -1,6 +1,6 @@
-<?php namespace BJ\Core;
+<?php namespace App\Core;
     
-    use BJ\Config\VariablesGlobales;
+    use App\Config\VariablesGlobales;
 
     class ControladorFrontal 
     {
@@ -8,11 +8,11 @@
         
         function cargarControlador($controller)
         {
-            $controlador = "BJ\\Controller\\" . ucwords($controller) . 'Controller';
+            $controlador = "App\\Controller\\" . ucwords($controller) . 'Controller';
             
             if( ! class_exists($controlador))
             {
-                $controlador = "BJ\\Controller\\" . ucwords(VariablesGlobales::$controlador_defecto) . 'Controller';   
+                $controlador = "App\\Controller\\" . ucwords(VariablesGlobales::$controlador_defecto) . 'Controller';   
             }
             
 

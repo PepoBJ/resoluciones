@@ -1,6 +1,6 @@
-<?php namespace BJ\Core;
+<?php namespace App\Core;
     
-    use BJ\Core\Conectar;
+    use App\Core\Conectar;
 
     class EntidadBase
     {

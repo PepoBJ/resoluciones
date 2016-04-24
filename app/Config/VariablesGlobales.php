@@ -1,4 +1,4 @@
-<?php namespace BJ\Config;
+<?php namespace App\Config;
 
 	class VariablesGlobales
 	{
@@ -16,7 +16,7 @@
 
 		/*		SUB-RUTA [ CARPETA] 		*/
 
-		public static $base_url = "http:///"; // en caso de usar dominio [ejemplo.com] dejar en blanco
+		public static $base_url = "http://resolucion.com/"; // en caso de usar dominio [ejemplo.com] dejar en blanco
 		
 		/*  **  */
 	}
